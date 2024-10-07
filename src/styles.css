@@ -1,0 +1,160 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: var(--font-sans);
+  line-height: var(--font-lineheight-3);
+  padding: var(--size-fluid-2);
+  -webkit-font-smoothing: antialiased;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+p {
+  margin-block: var(--size-fluid-1) var(--size-fluid-3);
+}
+
+a:not(.logo) {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px solid var(--gray-5);
+}
+
+a:hover {
+  color: var(--gray-6);
+}
+
+/* =================== */
+/*        Radar        */
+/* =================== */
+
+#radar {
+  /* Makes the radar responsive */
+  width: 100%;
+}
+
+@media screen and (min-width: 1000px) {
+  #radar {
+    /* Magic number ... */
+    transform: translateX(-60px);
+  }
+}
+
+/* =================== */
+/*        Dialog       */
+/* =================== */
+
+html:has(dialog[open]) {
+  overflow: hidden;
+}
+
+dialog {
+  margin: auto;
+  padding: var(--size-fluid-1) var(--size-fluid-2);
+  position: fixed;
+  inset: 0;
+  z-index: var(--layer-important);
+  width: min(100% - 3rem, var(--size-content-3, 60ch));
+  border-radius: var(--radius-2);
+  border: var(--border-size-2) solid var(--gray-7);
+  font-size: var(--font-size-fluid-1);
+}
+
+dialog header {
+  display: flex;
+  gap: var(--size-fluid-2);
+  margin-block-end: var(--size-fluid-4);
+}
+
+dialog header :first-child {
+  flex-grow: 1;
+}
+
+dialog h4 {
+  font-size: var(--font-size-fluid-3);
+  line-height: var(--font-lineheight-0);
+}
+
+dialog button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: var(--size-7);
+  width: var(--size-7);
+  padding: 0;
+  background: transparent;
+  border: none;
+  border-radius: var(--radius-4);
+  cursor: pointer;
+}
+
+dialog article {
+  color: var(--gray-7);
+  line-height: var(--font-lineheight-4);
+  margin-block: var(--size-fluid-1) var(--size-fluid-2);
+}
+
+dialog::backdrop {
+  backdrop-filter: blur(25px);
+}
+
+/* =================== */
+/*        Layout       */
+/* =================== */
+
+.columns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--size-fluid-5);
+}
+
+.columns > * {
+  flex-grow: 1;
+  flex-basis: calc((70rem - 100%) * 999);
+}
+
+.columns > :nth-last-child(n + 3),
+.columns > :nth-last-child(n + 3) ~ * {
+  flex-basis: 100%;
+}
+
+/* =================== */
+/*        Badge        */
+/* =================== */
+
+.badge {
+  display: inline-block;
+  color: var(--gray-0);
+  font-size: var(--font-size-fluid-0);
+  font-weight: var(--font-weight-7);
+  text-transform: uppercase;
+  border-radius: var(--radius-2);
+  padding: var(--size-1) var(--size-3);
+}

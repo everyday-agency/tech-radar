@@ -1,0 +1,41 @@
+name: CI/CD & Automation
+quadrant: 3
+entries:
+  - label: Docker
+    description: >
+      <a href="https://www.docker.com/">Docker</a> is a platform that automates
+      the deployment and management of applications within lightweight, portable
+      containers, ensuring consistency across different environments.
+
+      Our entire infrastructure is built using Docker, making it the default
+      method for both deploying and locally developing software,
+    ring: adopt
+    active: true
+    moved: 0
+  - label: GitLab CI/CD
+    description: >
+      <a href="https://docs.gitlab.com/ee/ci/">GitLab CI/CD</a>  is an
+      integrated toolset for continuous integration and continuous delivery,
+      enabling automated testing, building, and deployment of code within
+      GitLab.
+
+      It is the default platform we use to manage and develop all of our
+      closed-source software, ensuring consistency and efficiency across our
+      products, esuring our projects are healthy and meet our quality standards.
+    ring: adopt
+    active: true
+    moved: 0
+  - label: GitHub Actions
+    description: >
+      <a href="https://github.com/features/actions">GitHub Actions</a> is a
+      feature that enables automation of tasks and workflows directly within
+      GitLab, similar to GitHub Actions. It allows developers to define custom
+      workflows, automate processes, and integrate seamlessly with their
+      existing CI/CD pipelines, enhancing productivity and collaboration.
+
+      Projects, especially the open source ones, that are hosted on GitHub
+      should make use of Github Actions to ensure that the projects meet our
+      quality standards.
+    ring: adopt
+    active: true
+    moved: 0

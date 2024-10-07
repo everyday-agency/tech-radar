@@ -1,0 +1,124 @@
+name: Tooling
+quadrant: 0
+entries:
+  - label: npm
+    description: >
+      <a href="https://www.npmjs.com/">npm</a> is a widely-used package manager
+      for JavaScript that helps developers install, share, and manage code
+      dependencies for Node.js projects.
+
+      However, it is not recommended to use npm; instead, we suggest using pnpm
+      for better performance and efficiency. With the addition of Corepack, npm
+      is no longer the default Node package manager.
+    ring: onHold
+    active: true
+    moved: 0
+  - label: pnpm
+    description: >
+      <a href="https://pnpm.io/">pnpm</a> is a fast, disk space-efficient
+      package manager for JavaScript that uses a unique approach to manage
+      dependencies by creating a global store for packages.
+
+      It is the recommended package manager due to its efficiency and
+      performance, and it is widely used and battle-tested in our existing
+      projects.
+    ring: adopt
+    active: true
+    moved: 0
+  - label: yarn
+    description: >
+      <a href="https://classic.yarnpkg.com/">Yarn</a> Yarn is a package manager
+      for JavaScript that offers fast and reliable dependency management with
+      features like offline caching and deterministic installs.
+
+      However, it is not recommended to use Yarn; instead, we suggest using PNPM
+      for better performance and efficiency in managing dependencies.
+    ring: onHold
+    active: true
+    moved: -1
+  - label: composer
+    description: >
+      <a href="https://getcomposer.org/">Composer</a> Composer is a dependency
+      management tool for PHP that handles libraries and packages, ensuring
+      smooth integration and version control within projects.
+
+      It is the default method for managing packages in our PHP-based projects.
+    ring: adopt
+    active: true
+    moved: 0
+  - label: Webpack
+    description: >
+      <a href="http://webpack.github.io/">Webpack</a> is a powerful module
+      bundler for JavaScript applications that enables developers to bundle and
+      optimize assets such as JavaScript, CSS, and images.
+
+      It is not recommended to use Webpack for new projects; instead, more
+      modern bundlers like vite or tsup, which require less configuration and
+      setup, are preferred. If you need to migrate away from Webpack or start a
+      new project, please contact your area architect for support and guidance.
+    ring: adopt
+    active: true
+    moved: 0
+  - label: tsup
+    description: >
+      <a href="https://tsup.egoist.sh/">tsup</a> is a fast and efficient bundler
+      designed specifically for building TypeScript libraries, offering a
+      streamlined setup with minimal configuration.
+
+      While tsup is recommended for library development in TypeScript, Vite is
+      preferred for building applications due to its superior development
+      experience and performance.
+    ring: adopt
+    active: true
+    moved: 0
+  - label: vite
+    description: >
+      <a href="https://vitejs.dev/">vite</a> is a modern build tool that
+      provides a fast and efficient development experience, especially
+      well-suited for building TypeScript applications, including those using
+      React.
+
+      It is recommended for writing apps in TypeScript and has been successfully
+      implemented in multiple projects, demonstrating its reliability and
+      effectiveness.
+    ring: onHold
+    active: true
+    moved: 2
+  - label: jest
+    description: >
+      <a href="https://jestjs.io/">jest</a> is a powerful Javascript testing
+      framework that supports running tests in a (virtuell) browser environment
+      as well as in Node.js. It is a very efficient and feature packed test
+      runner that supports TypeScript, React and other technologies out of the
+      box.
+
+      We recommend using jest as your default test runner for Javascript and
+      Typescript based projects.
+    ring: adopt
+    active: true
+    moved: 0
+  - label: Cypress
+    description: >
+      <a href="https://cypress.io/">Cypress</a> is an end-to-end testing
+      framework that offers a robust and user-friendly solution for automating
+      and verifying web application functionality.
+
+      It is recommended for writing end-to-end tests and has proven to be
+      reliable in large projects, ensuring thorough and consistent test
+      coverage.
+    ring: adopt
+    active: true
+    moved: 1
+  - label: Behat
+    description: >
+      <a href="https://behat.org/">Behat</a> is a PHP testing framework which
+      can be used to automate acceptance tests in a human readable language
+      called Gherkin. Since it is based on Cucumber, it also helps teams to
+      adopt and implement Behavioral Driven Development (BDD).
+
+      While Behat is still a good solution, other frameworks like Cypress are
+      more feature rich and developer friendly. We recommend to use an
+      alternative like Cypress for new projects.
+    ring: trial
+    active: true
+    moved: 0

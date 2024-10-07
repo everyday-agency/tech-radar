@@ -1,0 +1,39 @@
+name: Infrastructure
+quadrant: 1
+entries:
+  - label: MySQL
+    ring: adopt
+    active: true
+    moved: 0
+  - label: PostgreSQL
+    ring: trial
+    active: true
+    moved: 0
+  - label: Elasticsearch
+    description: >
+      <a href="https://www.elastic.co/">Elastic Search</a> is an open source
+      search platform. It is an extensible, multi-tenanted, and horizontally
+      scalable search solution based on Apache Lucene. It allows complex data
+      structures to be indexed and retrieved through a JSON based REST API. It
+      provides an elegant model of operation with automatic discovery of peers
+      in a cluster, failover, and replication. Elastic Search can be extended
+      with a plugin system that allows adding new functionality and changing
+      existing behavior. The community around this tool is quite vibrant as
+      illustrated by the number of client libraries available in languages like
+      Java, C#, Ruby, and JavaScript.
+    ring: trial
+    active: true
+    moved: 0
+  - label: MongoDB
+    description: >
+      For problems that fit the document database model, <a
+      href="https://www.mongodb.com/">MongoDB</a> is now the most popular
+      choice. In addition to ease of use and a solid technical implementation,
+      the community and ecosystem contributed to this success. We are aware of
+      problems where teams were tempted by the popularity of MongoDB when a
+      document database was not a good fit or they did not understand the
+      inherent complexity. When used appropriately, however, MongoDB has proven
+      itself on many projects.
+    ring: onHold
+    active: true
+    moved: -1
